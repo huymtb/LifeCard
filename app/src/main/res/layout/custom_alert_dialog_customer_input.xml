@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:padding="40dp"
+        android:id="@+id/alert_content_customer_input"
+        android:text="@string/customer_input_alert_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:textSize="18dp"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:background="#D2D2D2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:id="@+id/alert_agree_customer_input"
+        android:text="@string/customer_input_alert_agree"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:padding="15dp"
+        android:textColor="@color/next_button_button"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

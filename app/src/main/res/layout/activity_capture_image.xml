@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReviewImageActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/toolbar_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/inputCustomerToolbar"
+            android:background="@color/color_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/toolbar_show_image"
+                android:layout_gravity="center"
+                android:textColor="@color/black_text"
+                android:textSize="18dp"
+                android:id="@+id/toolbar_title" />
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+        <TextView
+            android:id="@+id/textCapture"
+            android:padding="10dp"
+            android:textSize="18dp"
+            android:layout_below="@+id/toolbar_show"
+            android:text="@string/capture_image_title_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textCapture1"
+            android:padding="10dp"
+            android:textSize="18dp"
+            android:layout_below="@+id/textCapture"
+            android:textStyle="bold|normal"
+            android:text="@string/capture_image_title_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/textCapture2"
+            android:paddingLeft="10dp"
+            android:textSize="14dp"
+            android:paddingRight="10dp"
+            android:layout_below="@+id/textCapture1"
+            android:text="@string/capture_image_title_6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_below="@+id/textCapture2"
+            android:orientation="vertical"
+            android:weightSum="7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <GridView
+                android:numColumns="2"
+                android:layout_weight="4.9"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:padding="1dp"
+                android:horizontalSpacing="2dp"
+                android:verticalSpacing="2dp"
+                android:id="@+id/grid_view_show_image"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+            </GridView>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="@string/capture_image_button_send"
+                android:id="@+id/send_photo"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="20dp"
+                android:padding="10dp"
+                android:background="@drawable/button_background"
+                 />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="@string/capture_image_alert_return"
+                android:id="@+id/back_to_guide"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:textSize="20dp"
+                android:padding="10dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/button_background"/>
+
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/opacityUploading"
+            android:background="#60000000"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"/>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:max="100"
+        android:progress="75"
+        android:indeterminate="false"
+        android:progressDrawable="@drawable/style_cicular_fill"
+        android:secondaryProgress="10"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateOnly="true"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/txtPercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/text_color_white"
+        android:textSize="20dp" />
+
+    <RelativeLayout
+        android:id="@+id/show_image_after_take"
+        android:background="#FFFFFF"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.prostage.lifecard.Utils.TouchImageView
+                android:id="@+id/image_show_view"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/button_next_camera"
+                android:layout_centerHorizontal="true" />
+
+
+
+        <Button
+            android:id="@+id/button_next_camera"
+            android:background="@drawable/button_background"
+            android:text="@string/button_next_camera"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button_done_camera"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+        <Button
+            android:id="@+id/button_done_camera"
+            android:textSize="20dp"
+            android:text="@string/button_view_image"
+            android:background="@drawable/button_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_above="@+id/button_return_camera" />
+
+        <Button
+            android:id="@+id/button_return_camera"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:textSize="20dp"
+            android:text="@string/button_return_camera"
+            android:background="@drawable/button_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

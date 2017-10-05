@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="black_text">#000000</color>
+
+    <color name="textMainActivity">#72B0F7</color>
+    <color name="color_toolbar">#F8F8F8</color>
+    <color name="color_text_customer_input">#A1A1A1</color>
+    <color name="text_hint_customer_input">#CCCCCC</color>
+    <color name="next_button_button">#72B0F7</color>
+    <color name="background_image_1">#EBC5C9</color>
+    <color name="background_image_2">#00F801</color>
+    <color name="background_image_3">#FF7E79</color>
+    <color name="background_image_4">#FF9400</color>
+    <color name="background_dialog">#4C4C4C</color>
+    <color name="text_color_white">#FFFFFF</color>
+    <color name="background_button">#00FFFFFF</color>
+    <color name="background_camera_view">#60000000</color>
+</resources>

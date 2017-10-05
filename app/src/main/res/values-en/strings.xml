@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Life Card</string>
+
+    <string name="title_mainView">おまとめ専用 \nサポートローンの書類を送る</string>
+    <string name="content_mainView">本人確認資料（免許証、保険証等）、収入証明書（源泉徴収等）、他社借入状況確認資料（請求書、他社Webログイン画面等）を送ることができます。</string>
+
+    <!-- Customer Input Activity Layout-->
+    <string name="toolbar_customer_input_text">お客さま情報入力</string>
+    <string name="customer_input_text">お客さまの受付番号、生年月日を入力してください。</string>
+    <string name="customer_input_text_1">受付番号はライフカードからお知らせしている8桁の数字です。</string>
+    <string name="customer_input_number_hint">受付番号</string>
+    <string name="customer_input_birthday_hint">生年月日</string>
+    <string name="next_button">次へ</string>
+    <string name="button_date_picker">OK</string>
+    <string name="button_cancel">リセット</string>
+    <string name="customer_input_alert_content">入力して頂いた受付番号、生年月日が一致していません。内容をご確認のうえ、再度入力 してください</string>
+    <string name="customer_input_alert_agree">確認</string>
+
+    <!-- Sending Document Activity Layout-->
+    <string name="toolbar_sending_document">送付書類の選択</string>
+    <string name="document_sending_content">送付する証明書類を選択してください。</string>
+    <string name="document_sending_content_1">送付書類が複数ある場合には１種類ずつ選択してください。</string>
+    <string name="document_sending_combobox">選択してください。</string>
+    <string name="explain_choose_document_1">. 有効期限内の種類を用意してください。</string>
+    <string name="explain_choose_document_2">. 裏面に変更情報の記載がある場合は、裏面も必ず撮影してください。</string>
+    <string name="explain_choose_document_3">撮影してください。</string>
+    <string name="spinner_title">選択してください</string>
+
+    <array name="spinner_choose_document">
+        <item>免許証</item>
+        <item>保険証</item>
+        <item>源泉徴収</item>
+        <item>他社請求書</item>
+        <item>他社Webログイン画面</item>
+        <item>選択してください</item>
+    </array>
+
+    <!-- Guide Activity Layout-->
+    <string name="toolbar_capture_image">撮影方法</string>
+    <string name="capture_image_title_1">カードタイプの場合</string>
+    <string name="capture_image_title_2">横撮りで撮影をお願いします。</string>
+    <string name="capture_image_title_3">紙タイプの場合。</string>
+    <string name="capture_image_front_image">表面</string>
+    <string name="capture_image_behind_image">裏面</string>
+    <string name="capture_image_number_1">1枚目</string>
+    <string name="capture_image_number_2">2枚目</string>
+    <string name="capture_image_number_3">3枚目</string>
+    <string name="capture_image_number_4">4枚目</string>
+    <string name="capture_image_button">撮影開始</string>
+    <string name="capture_image_alert_camera">”ライフカード”がカメラへのアクセスを求めています。</string>
+    <string name="capture_image_alert_cancel">許可しない</string>
+    <string name="capture_image_dialog_take_picture">\n ・事務手続き時に証明書類が判読できない場合は、再撮影をお願いする場合があります。「画像を確認」から撮影内容をご確認ください。\n ・問題なければ「次へ」から2枚目（裏面）の撮影を開始してください。\n 開始してください。\n 【撮影時のポイント】\n ・光が反射していませんか？\n ・ぼやけて読めない文字はないですか？\n ・画像が全体的に小さすぎませんか？\n ・撮影書類のすべての記載事項が写っていますか？</string>
+    <string name="capture_image_alert_check_image">画像を確認</string>
+    <string name="capture_image_alert_return">再撮影</string>
+
+    <!-- Review Image Activity Layout-->
+    <string name="toolbar_show_image">撮影画像の確認</string>
+    <string name="capture_image_title_4">撮影された画像が問題なければ「送信」を押してください。\n撮り直す場合は「再撮影」を押してください</string>
+    <string name="capture_image_title_5">選択書類</string>
+    <string name="capture_image_title_6">. 運転免許証</string>
+    <string name="capture_image_button_send">送信</string>
+    <string name="capture_image_button_back">再撮影</string>
+    <string name="capture_image_camera_error">あなたの端末のカメラの機能は対応していません。</string>
+    <string name="capture_delete_image">このイメージを削除してもよろしいでしょうか。</string>
+    <string name="button_next_camera">次の画像を撮影</string>
+    <string name="button_view_image">撮影画像の確認</string>
+    <string name="button_return_camera">撮影をやり直す</string>
+
+    <!-- Confirm Step Activity Layout-->
+    <string name="title_confirm_activity">証明書類の受領</string>
+    <string name="content_confirm_activity">証明書類を受領いたました。\nお手続きありがとうございました。\n他にも提出書類がある場合には「証明書類の送付」から再度お手続きください。</string>
+    <string name="return_btn_confirm_activity">証明書類の送付</string>
+
+    <string name="retake_photo">再撮影</string>
+
+    <!--Camera view-->
+    <string name="camera_get_image">画像を確認</string>
+    <string name="camera_cancel_image">撮影をやり直す</string>
+    <string name="btn_activity_main">書類を撮影する</string>
+    <string name="text_guide_screen">証明書が大きく、1回の撮影で収まらない場合は何回かに分けて撮影してください</string>
+
+</resources>

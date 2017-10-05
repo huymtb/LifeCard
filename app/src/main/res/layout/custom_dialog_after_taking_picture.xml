@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:id="@+id/layout_linear"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/image_show_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_marginBottom="20dp"/>
+
+
+        <Button
+            android:id="@+id/btn_next_camera"
+            android:background="@drawable/edittext_input_layout"
+            android:text="@string/next_button"
+            android:layout_weight="0.1"
+            android:textColor="@color/next_button_button"
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+        <Button
+            android:id="@+id/btn_done_camera"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/next_button_button"
+            android:textSize="18dp"
+            android:layout_weight="0.1"
+            android:text="@string/capture_image_alert_check_image"
+            android:background="@drawable/edittext_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+        <Button
+            android:id="@+id/btn_return_camera"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/next_button_button"
+            android:textSize="18dp"
+            android:layout_weight="0.1"
+            android:text="@string/capture_image_alert_return"
+            android:background="@drawable/edittext_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+
+
+</LinearLayout>
